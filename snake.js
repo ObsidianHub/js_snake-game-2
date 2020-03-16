@@ -11,6 +11,21 @@ ground.src = "img/ground.png";
 const foodImg = new Image();
 foodImg.src = "img/food.png";
 
+// load audio files
+const dead = new Audio();
+const eat = new Audio();
+const up = new Audio();
+const right = new Audio();
+const left = new Audio();
+const bottom = new Audio();
+
+dead.src = "audio/dead.mp3";
+eat.src = "audio/eat.mp3";
+up.src = "audio/up.mp3";
+right.src = "audio/right.mp3";
+left.src = "audio/left.mp3";
+bottom.src = "audio/bottom.mp3";
+
 // create the snake
 let snake = [];
 snake[0] = {
