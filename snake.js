@@ -33,13 +33,14 @@ let d;
 document.addEventListener("keydown", direction);
 
 function direction(event) {
-  if (event.keyCode == 37) {
+  let key = event.keyCode;
+  if (key == 37 && d != "RIGHT") {
     d = "LEFT";
-  } else if (event.keyCode == 38) {
+  } else if (key == 38 && d != "DOWN") {
     d = "UP";
-  } else if (event.keyCode == 39) {
+  } else if (key == 39 && d != "LEFT") {
     d = "RIGHT";
-  } else if (event.keyCode == 40) {
+  } else if (key == 40 && d != "UP") {
     d = "DOWN";
   }
 }
