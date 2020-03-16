@@ -45,6 +45,16 @@ function direction(event) {
   }
 }
 
+// check collision function
+function collision(head, array) {
+  for (let i = 0; i < array.length; i++) {
+    if (head.x == array[i].x && head.y == array[i].y) {
+      return true;
+    }
+  }
+  return false;
+}
+
 // draw everything to the canvas
 function draw() {
   ctx.drawImage(ground, 0, 0);
@@ -81,6 +91,12 @@ function draw() {
     // remove the tail
     snake.pop();
   }
+
+  // add new head
+  let newHead = {
+    x: snakeX,
+    y: snakeY
+  };
 
   // game over
   if (
