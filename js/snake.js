@@ -73,3 +73,9 @@ function collision(head, array) {
   }
   return false;
 }
+
+// draw everything to the canvas
+function draw() {}
+
+// call draw function every 100ms
+let game = setInterval(draw, 100);
