@@ -129,6 +129,12 @@ function draw() {
     clearInterval(game);
     dead.play();
   }
+
+  snake.unshift(newHead);
+
+  ctx.fillStyle = "white";
+  ctx.font = "45px Changa one";
+  ctx.fillText(score, 2 * box, 1.6 * box);
 }
 
 // call draw function every 100ms
