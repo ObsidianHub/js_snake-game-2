@@ -111,6 +111,12 @@ function draw() {
     // remove the tail
     snake.pop();
   }
+
+  // add new head
+  let newHead = {
+    x: snakeX,
+    y: snakeY,
+  };
 }
 
 // call draw function every 100ms
