@@ -91,6 +91,12 @@ function draw() {
   // old head position
   let snakeX = snake[0].x;
   let snakeY = snake[0].y;
+
+  // which direction
+  if (d == "LEFT") snakeX -= box;
+  if (d == "UP") snakeY -= box;
+  if (d == "RIGHT") snakeX += box;
+  if (d == "DOWN") snakeY += box;
 }
 
 // call draw function every 100ms
