@@ -87,6 +87,10 @@ function draw() {
   }
 
   ctx.drawImage(foodImg, food.x, food.y);
+
+  // old head position
+  let snakeX = snake[0].x;
+  let snakeY = snake[0].y;
 }
 
 // call draw function every 100ms
