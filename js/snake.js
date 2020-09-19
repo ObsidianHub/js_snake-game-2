@@ -25,3 +25,10 @@ up.src = "../audio/up.mp3";
 right.src = "../audio/right.mp3";
 left.src = "../audio/left.mp3";
 down.src = "../audio/down.mp3";
+
+// create the snake
+let snake = [];
+snake[0] = {
+  x: 9 * box,
+  y: 10 * box,
+};
